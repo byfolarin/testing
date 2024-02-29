@@ -213,52 +213,52 @@
 
 
 // Adding Books: Implement a function addBook that takes book details (title, author, genre) as parameters and adds a new book object to the library's collection.
-let library = [];
+// let library = [];
 
-function addBook (title,author,genre){
-        let book = {
-            title: title,
-            author: author,
-            genre:genre,
-        }
+// function addBook (title,author,genre){
+//         let book = {
+//             title: title,
+//             author: author,
+//             genre:genre,
+//         }
 
-        library.push(book);
-}
+//         library.push(book);
+// }
 
-addBook("The Great Gatsby", "F. Scott Fitzgerald", "Classic Literature");
-addBook("To Kill a Mockingbird", "Harper Lee", "Classic Literature");
+// addBook("The Great Gatsby", "F. Scott Fitzgerald", "Classic Literature");
+// addBook("To Kill a Mockingbird", "Harper Lee", "Classic Literature");
 
 
-console.log(addBook());
+// console.log(addBook());
 // Listing Books: Implement a function listBooks that iterates over the library's collection of books and logs each book's details to the console.
 
-function listBooks() {
-    for (let i = 0; i < library.length; i++) {
-        console.log(library[i]);
-    }
+// function listBooks() {
+//     for (let i = 0; i < library.length; i++) {
+//         console.log(library[i]);
+//     }
     
-}
+// }
 
-listBooks();
+// listBooks();
 
 
-
-// Searching Books: Implement a function searchBook that takes a search query as input and returns an array of books that match the query (search by title, author, or genre).
 
 // Searching Books: Implement a function searchBook that takes a search query as input and returns an array of books that match the query (search by title, author, or genre).
 
-function searchBook(query) {
-    let result = [];
-    for (let i = 0; i < library.length; i++) {
-        let newbook = library[i];
-        if ((newbook.title && newbook.title.includes(query)) ||
-            (newbook.author && newbook.author.includes(query)) ||
-            (newbook.genre && newbook.genre.includes(query))) {
-            result.push(newbook);
-        }
-    }
-    return result;
-}
+// Searching Books: Implement a function searchBook that takes a search query as input and returns an array of books that match the query (search by title, author, or genre).
+
+// function searchBook(query) {
+//     let result = [];
+//     for (let i = 0; i < library.length; i++) {
+//         let newbook = library[i];
+//         if ((newbook.title && newbook.title.includes(query)) ||
+//             (newbook.author && newbook.author.includes(query)) ||
+//             (newbook.genre && newbook.genre.includes(query))) {
+//             result.push(newbook);
+//         }
+//     }
+//     return result;
+// }
 
 
 
@@ -267,35 +267,35 @@ function searchBook(query) {
 
 // Removing Books: Implement a function removeBook that takes a book title as input and removes the corresponding book from the library's collection.
 
-function removeBook(title) {
-    for (let i = 0; i < library.length; i++) {
-        if (library[i].title === title) {
-            // Remove the book from the library's collection
-            library.splice(i, 1);
-            console.log(`Book "${title}" has been removed from the library.`);
-            return; // Exit the function after removing the book
-        }
-    }
-    console.log(`Book "${title}" was not found in the library.`);
-}
+// function removeBook(title) {
+//     for (let i = 0; i < library.length; i++) {
+//         if (library[i].title === title) {
+//             // Remove the book from the library's collection
+//             library.splice(i, 1);
+//             console.log(`Book "${title}" has been removed from the library.`);
+//             return; // Exit the function after removing the book
+//         }
+//     }
+//     console.log(`Book "${title}" was not found in the library.`);
+// }
 
-// Example usage:
-removeBook("The Great Gatsby");
-console.log(library); // Verify that "The Great Gatsby" has been removed from the library
+// // Example usage:
+// removeBook("The Great Gatsby");
+// console.log(library); // Verify that "The Great Gatsby" has been removed from the library
 
 
 // Borrowing Books: Implement a function borrowBook that takes a book title as input and marks the book as borrowed if it's available. If the book is already borrowed, log a message indicating that the book is not available.
 
-function borrowBook(){
-    for (let i = 0; i < library.length; i++) {
-        if (library[i].title !== title) {
-            console.log(`Book "${title}" has been removed from the library.`);
-            return; // Exit the function after removing the book
-        }
-    }
-    console.log(`Book "${title}" was not found in the library.`);
-}
-}
+// function borrowBook(){
+//     for (let i = 0; i < library.length; i++) {
+//         if (library[i].title !== title) {
+//             console.log(`Book "${title}" has been removed from the library.`);
+//             return; // Exit the function after removing the book
+//         }
+//     }
+//     console.log(`Book "${title}" was not found in the library.`);
+// }
+// }
 
 
 // Returning Books: Implement a function returnBook that takes a book title as input and marks the book as returned if it was borrowed. If the book is not in the borrowed state, log a message indicating that the book was not borrowed.
@@ -308,9 +308,352 @@ function borrowBook(){
 // Display Menu: Implement a menu-driven interface that allows users to interact with the library system. The menu should provide options for adding, listing, searching, removing, borrowing, and returning books. Use a switch statement to handle different menu options.
 
 // Example of a constructor function
-function Person(name, age) {
-    this.name = name;
-    this.age = age;
+// function Person(name, age) {
+//     this.name = name;
+//     this.age = age;
+// }
+
+// const personObj = new Person('John', 30); // Creating a new object using the Person constructor function
+// console.log(personObj.age)
+
+
+// const narPerson = new Person ('side', 40);
+
+// console.log(Person);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//
+
+
+// # Lab Instructions: Object Oriented Programming
+ 
+// > ### **Tips: Before you Begin**
+// > #### **To view your code and instructions side-by-side**, select the following in your VSCode toolbar:
+// > - View -> Editor Layout -> Two Columns
+// > - To view this file in Preview mode, right click on this README.md file and `Open Preview`
+// > - Select your code file in the code tree, which will open it up in a new VSCode tab.
+// > - Drag your assessment code files over to the second column. 
+// > - Great work! You can now see instructions and code at the same time. 
+// > - Questions about using VSCode? Please see our support resources here:  
+// > [Visual Studio Code on Coursera](https://www.coursera.org/learn/programming-with-javascript/supplement/roMvE/visual-studio-code-on-coursera)
+// > #### **To run your JavaScript code**
+// > - Select your JavaScript file
+// > - Select the "Run Code" button in the upper right hand toolbar of VSCode.  
+// > Ex: It looks like a triangular "Play" button. <br><br>
+
+
+class Person {
+    constructor(name, age, energy) {
+        this.name = "Tom";
+        this.age = 20;
+        this.energy = 100;
+    }
+
+
+    sleep(){
+        this.energy += 10
+    }
+
+
+    doSomethingFun(){
+        this.energy -= 10
+    }
 }
 
-const personObj = new Person('John', 30); // Creating a new object using the Person constructor function
+
+
+
+
+
+// ## Task 1: Code a Person class
+
+// Code a Person class, with three parameters in the constructor: name, age, and energy.
+
+// Set the default parameters in the Person class as follows:
+
+// ```
+// name = "Tom"
+
+// age = 20
+
+// energy = 100
+// ```
+
+// Code two methods in the `Person` class. Name those methods `sleep()` and `doSomethingFun()`.
+
+// The `sleep()` method should take the existing energy level and increase it by 10.
+
+// The doSomethingFun() method should take the existing energy level and decrease it by 10.
+// <br><br>
+
+
+
+class Worker extends Person {
+    constructor(name,age,energy,xp,hourlyWage){
+        super (name,age,energy);
+        this.xp = 0;
+        this.hourlyWage = 10;
+    }
+
+
+    goToWork(){
+        this.xp += 10
+    }
+}
+
+
+
+
+// ## Task 2: Code a Worker class
+
+// Code a sub-class, inheriting from the `Person` class, and name it `Worker`.
+
+// The `Worker` class has two additional parameters in the constructor: 
+// - xp (for "experience points")
+// - hourlyWage.
+
+// These properties are set to the following default values:
+// ```
+// xp = 0
+
+// hourlyWage = 10
+// ```
+// The `Worker` class has all the paramerters and methods of its super-class.
+
+// Additionally, it has the `goToWork()` method, which, whenever it's run, increases the value of the `xp` property by 10.
+// <br><br>
+
+
+function intern(){
+    const internObject = new Worker ("bob", 21, 110, 0,10);
+    internObject.goToWork();
+    return internObject;
+}
+
+// ## Task 3: Code a intern object
+
+// Inside the intern function instantiate the `Worker` class to code a new intern object.
+
+// The intern should have the following characteristics:
+// ```
+// name: Bob
+
+// age: 21
+
+// energy: 110
+
+// xp: 0
+
+// hourlyWage: 10
+// ```
+
+// Run the `goToWork()` method on the intern object. Then `return` the intern object.
+
+// <br><br>
+
+
+
+function manager(){
+    const managerObject = new Worker ("Alice", 30, 120, 100,30);
+    managerObject.doSomethingFun();
+    return managerObject;
+}
+
+// ## Task 4: Code a manager object
+
+// Inside the manager function instantiate the `Worker` class to code a new `manager` object.
+
+// The manager object should have the following characteristics:
+// ```
+// name: Alice
+
+// age: 30
+
+// energy: 120
+
+// xp: 100
+
+// hourlyWage: 30
+// ```
+
+// Run the `doSomethingFun()` method on the manager object. Then `return` the manager object.
+
+// <br><br>
+
+// ### Nice work! 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// // Task 1: Code a Person class
+// class Person {
+//     constructor(name, age, energy) {
+//         this.name = "Tom";
+//         this.age = 20;
+//         this.energy = 100;
+//     }
+
+//     sleep() {
+//         this.energy += 10;
+//     }
+
+//     doSomethingFun() {
+//         this.energy -= 10;
+//     }
+// }
+
+
+// // Task 2: Code a Worker class
+
+// class Worker extends Person {
+//     constructor(name, age, energy, xp, hourlyWage) {
+//         super(name, age, energy);
+//         this.xp = xp; // Correctly set xp based on the parameter passed
+//         this.hourlyWage = hourlyWage; // Correctly set hourlyWage based on the parameter passed
+//     }
+
+//     goToWork() {
+//         this.xp += 10;
+//     }
+// }
+
+
+
+// // Task 3: Code an intern object, run methods
+
+// function intern() {
+//     const internObject = new Worker("Bob", 21, 110, 0, 10);
+//     internObject.goToWork();
+//     return internObject;
+// }
+
+
+// // Task 4: Code a manager object, methods
+// function manager() {
+//     const managerObject = new Worker("Alice", 30, 120, 100, 30);
+//     managerObject.doSomethingFun();
+//     return managerObject;
+// }
+
+
+
+
+// class Vehicle{
+//     constructor (make, model,year){
+//         this.make = make;
+//         this.model = model;
+//         this.year = 2022;
+//     }
+
+//     drive(){
+//         console.log("the vehicle is being driven");
+//     }
+
+//     stop(){
+//         console.log("the vehicle has stopped");
+//     }
+// }
+
+// class Car extends Vehicle {
+//     constructor (make,model,year){
+//         super(make,model,year);
+//     }
+
+//     honk(){
+//         console.log("the car is honking");
+//     }
+// }
+
+
+// Calculator Program:
+// Write a JavaScript program that takes
+// two numbers as input and
+// performs addition, subtraction, multiplication, and division operations on them.
+
+
+  function num(a, b, sum) {
+    if (sum === '+') {
+        return a + b;
+    } else if (sum === '-') {
+        return a - b;
+    } else if (sum === '/') {
+        return a / b;
+    } else if (sum === '*'){
+        return a * b;
+    } else {
+        console.log( "the " + sum + " provided is not correct");
+    }
+}
+
+let number = 16;
+let accuracy = 20;
+
+console.log(num(number,accuracy, "*"));
+
+// Temperature Converter:
+// Write a JavaScript program to convert temperatures between Fahrenheit and Celsius.
+
+// Function to convert Fahrenheit to Celsius
+function fahrenheitToCelsius(fahrenheit) {
+    (fahrenheit - 32) * 5/9
+    return (fahrenheit - 32) * 5/9;
+}
+
+
+function celsiusToFahrenheit(celsius) {
+    (celsius * 9/5) + 32
+    return (celsius * 9/5) + 32;
+}
+
+
+console.log(fahrenheitToCelsius(62)); 
+console.log(celsiusToFahrenheit(32.7));  
