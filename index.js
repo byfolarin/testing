@@ -620,40 +620,204 @@ function manager(){
 // performs addition, subtraction, multiplication, and division operations on them.
 
 
-  function num(a, b, sum) {
-    if (sum === '+') {
-        return a + b;
-    } else if (sum === '-') {
-        return a - b;
-    } else if (sum === '/') {
-        return a / b;
-    } else if (sum === '*'){
-        return a * b;
-    } else {
-        console.log( "the " + sum + " provided is not correct");
+//   function num(a, b, sum) {
+//     if (sum === '+') {
+//         return a + b;
+//     } else if (sum === '-') {
+//         return a - b;
+//     } else if (sum === '/') {
+//         return a / b;
+//     } else if (sum === '*'){
+//         return a * b;
+//     } else {
+//         console.log( "the " + sum + " provided is not correct");
+//     }
+// }
+
+// let number = 16;
+// let accuracy = 20;
+
+// console.log(num(number,accuracy, "*"));
+
+// // Temperature Converter:
+// // Write a JavaScript program to convert temperatures between Fahrenheit and Celsius.
+
+// // Function to convert Fahrenheit to Celsius
+// function fahrenheitToCelsius(fahrenheit) {
+//     (fahrenheit - 32) * 5/9
+//     return (fahrenheit - 32) * 5/9;
+// }
+
+
+// function celsiusToFahrenheit(celsius) {
+//     (celsius * 9/5) + 32
+//     return (celsius * 9/5) + 32;
+// }
+
+
+// console.log(fahrenheitToCelsius(62)); 
+// console.log(celsiusToFahrenheit(32.7));  
+
+
+// // Palindrome Checker:
+// // Write a JavaScript function to check if a given string is a palindrome or not.
+
+// function palindrome (Checker){
+//     let arr = Checker.split();
+
+//     for (i = 0; i < arr.length; i++){
+//         if (arr[i] == arr.prototype.reverse()){
+//             console.log("this is a palindrome")
+//         } else if (arr[i] !== arr.prototype.revese()){
+//             console.log("this is not a palindrome")
+//         } else { console.log("fuck this")
+//     }
+//     }
+// }
+
+// console.log(palindrome("away"));
+
+
+// function palindrome(Checker) {
+//     // Split the input string into an array of characters
+//     let arr = Checker.split("");
+
+//     // Reverse the array
+//     let reversedArr = arr.slice().reverse();
+
+//     // Check if the original array is equal to the reversed array
+//     if (arr.join("") === reversedArr.join("")) {
+//         return "This is a palindrome";
+//     } else {
+//         return "This is not a palindrome";
+//     }
+// }
+
+// console.log(palindrome("racecar")); // Output: This is a palindrome
+// console.log(palindrome("hello"));   // Output: This is not a palindrome
+
+
+// Reverse a String:
+// Write a JavaScript function to reverse a given string.
+
+// function string(str){
+//     let reversedArr = str.split('').reverse();
+//     let newSplit = reversedArr.join('');
+//     return newSplit
+// }
+
+// console.log(string("Ogbeni"));
+
+
+// Write a JavaScript program that prints the numbers from 1 to 100. But for multiples of three, print "Fizz" instead of the number, and for the multiples of five, print "Buzz". For numbers that are multiples of both three and five, print "FizzBuzz".
+
+
+// for (let i = 1; i <= 100; i++){
+//  if (i % 3 === 0 && i % 5 === 0){
+//         console.log("FizzBuzz")
+//     }
+//     else  if (i % 3 === 0 ){
+//         console.log("Fizz")
+//     } else if (i % 5 === 0){
+//         console.log("Buzz")
+//     }  else {
+//         console.log(i)
+//     }
+// }
+
+
+
+
+
+// Task Manager Application:
+// 1.Create a simple task manager application 
+
+// 2. where users can add, delete, and mark tasks as completed. 
+
+// 3.Use object-oriented programming principles to create a Task class with properties 
+
+// 4 like taskName, taskDescription, isCompleted, etc. Implement methods for adding tasks, deleting tasks, and marking tasks as completed.
+
+// class Task {
+//     constructor(taskName, taskDescription, isCompleted) {
+//         this.taskName = taskName;
+//         this.taskDescription = taskDescription;
+//         this.isCompleted = isCompleted;
+//     }
+
+//     taskadd() {
+//         console.log("Task has been added");
+//     }
+
+//     taskdelete() {
+//         console.log("Task has been deleted");
+//     }
+
+//     markingtask() {
+//         if (this.isCompleted === true) {
+//             console.log("Task has been marked as completed");
+//         } else {
+//             console.log("Task is not completed");
+//         }
+//     }
+// }
+
+// let newTask = new Task("Clean the bathroom floor", "Make it sparkling", true);
+// newTask.markingtask(); // Call markingtask method separately
+// console.log(newTask);
+
+class Task {
+    constructor(taskName, taskDescription, isCompleted) {
+        this.taskName = taskName;
+        this.taskDescription = taskDescription;
+        this.isCompleted = isCompleted;
+        this.markingtask(); // Call markingtask method in the constructor
+    }
+
+    taskadd() {
+        console.log("Task has been added");
+    }
+
+    taskdelete() {
+        console.log("Task has been deleted");
+    }
+
+    markingtask() {
+        if (this.isCompleted === true) {
+            console.log("Task has been marked as completed");
+        } else {
+            console.log("Task is not completed");
+        }
     }
 }
 
-let number = 16;
-let accuracy = 20;
-
-console.log(num(number,accuracy, "*"));
-
-// Temperature Converter:
-// Write a JavaScript program to convert temperatures between Fahrenheit and Celsius.
-
-// Function to convert Fahrenheit to Celsius
-function fahrenheitToCelsius(fahrenheit) {
-    (fahrenheit - 32) * 5/9
-    return (fahrenheit - 32) * 5/9;
-}
+let newTask = new Task("Clean the bathroom floor", "Make it sparkling", true);
+console.log(newTask);
 
 
-function celsiusToFahrenheit(celsius) {
-    (celsius * 9/5) + 32
-    return (celsius * 9/5) + 32;
-}
+// Student Grade Calculator:
+// Write a program that calculates the average grade of students. 
+//Use objects to represent students, where each student has a name and an array of grades.
+// Implement functions to calculate the average grade of each student and the overall class average.
+
+// class Student {
+//     constructor(name, grades) {
+//         this.name = name;
+//         this.grades = grades;
+//     }
+
+//     averageGrade() {
+//         let sum = 0;
+//         for (let i = 0; i < this.grades.length; i++) {
+//             sum += this.grades[i];
+//         }
+//         return sum / this.grades.length;
+//     }
+// }
+
+// // Example usage:
+// const student1 = new Student("Alice", [85, 90, 88]);
+// console.log(student1.averageGrade()); // Output: 87.67
 
 
-console.log(fahrenheitToCelsius(62)); 
-console.log(celsiusToFahrenheit(32.7));  
+// 
