@@ -820,4 +820,179 @@ console.log(newTask);
 // console.log(student1.averageGrade()); // Output: 87.67
 
 
-// 
+// Product Inventory System:
+// Design a product inventory system using object-oriented programming. Create a Product class with properties like productName, productPrice, quantityInStock, etc. Implement methods for adding products, updating product information, and displaying the inventory.
+
+// class Product {
+//     constructor (productName,productPrice,quantityInStock){
+//         this.productName = productName;
+//         this.productPrice = productPrice;
+//         this.quantityInStock = quantityInStock;
+//     }
+
+//     addingProducts(){
+
+//     }
+
+//     updatingProducts(){
+        
+//     }
+
+//     displayInventory(){
+        
+//     }
+
+
+// }
+
+// class Product {
+//     constructor(productName, productPrice, quantityInStock) {
+//         this.productName = productName;
+//         this.productPrice = productPrice;
+//         this.quantityInStock = quantityInStock;
+//     }
+
+//     addingProducts(quantity) {
+//         this.quantityInStock += quantity;
+//         console.log(`${quantity} ${this.productName}(s) added to inventory.`);
+//     }
+
+//     updatingProducts(newPrice) {
+//         this.productPrice = newPrice;
+//         console.log(`${this.productName} price updated to $${newPrice}.`);
+//     }
+
+//     displayInventory() {
+//         console.log(`Product Name: ${this.productName}`);
+//         console.log(`Price: $${this.productPrice}`);
+//         console.log(`Quantity in Stock: ${this.quantityInStock}`);
+//     }
+// }
+
+// // Example usage:
+// const laptop = new Product("Laptop", 999.99, 10);
+// laptop.displayInventory(); // Output: Product Name: Laptop, Price: $999.99, Quantity in Stock: 10
+
+// laptop.addingProducts(5); // Output: 5 Laptop(s) added to inventory.
+// laptop.displayInventory(); // Output: Product Name: Laptop, Price: $999.99, Quantity in Stock: 15
+
+// laptop.updatingProducts(1099.99); // Output: Laptop price updated to $1099.99.
+// laptop.displayInventory(); // Output: Product Name: Laptop, Price: $1099.99, Quantity inn  Stock: 15
+
+
+
+
+// class Show extends Product{
+//     constructor (productName,productPrice,quantityInStock,imports,exports){
+//             super(productName,productPrice,quantityInStock);
+//             this.exports = exports;
+//             this.imports = imports;
+//     }
+
+// }
+
+
+// // Example 1: Basic array destructuring
+// const numbers = [1, 2, 3, 4, 5];
+
+// // Extracting values using destructuring
+// const [first, second, third] = numbers;
+
+// console.log(first);  // Output: 1
+// console.log(second); // Output: 2
+// console.log(third);  // Output: 3
+
+// // Example 2: Ignoring some elements
+// const [one, , three] = numbers;
+
+// console.log(one);   // Output: 1
+// console.log(three); // Output: 3
+
+// // Example 3: Assigning default values
+// const [x, y, z, a = 10, b = 20] = numbers;
+
+// console.log(a); // Output: 4
+// console.log(b); // Output: 5
+
+// // Example 4: Swapping variables
+// let a = 1;
+// let b = 2;
+
+// [a, b] = [b, a];
+
+// console.log(a); // Output: 2
+// console.log(b); // Output: 1
+
+
+const message = "Hello";
+
+for (const char of message) {
+    console.log(char);
+}
+
+// Output:
+// H
+// e
+// l
+// l
+// o
+
+
+const car = {
+    speed: 100,
+    color: "blue"
+}
+
+
+
+// for(const prop of  Object.keys(car) ) {
+//     console.log(prop);
+// }
+
+
+// const colors = ['red','orange','yellow']
+// for (const color of colors) {
+//     console.log(color);
+// }
+
+
+// for(const prop of  Object.values(car) ) {
+//     console.log(prop);
+// }
+
+for(const prop of  Object.entries(car) ) {
+    console.log(prop);
+}
+
+
+var clothingItem = {
+    price: 50,
+    color: 'beige',
+    material: 'cotton',
+    season: 'autumn'
+}
+
+for( const key of Object.keys(clothingItem) ) {
+    console.log(key, ":", clothingItem[key])
+}
+
+
+var dairy = ['cheese', 'sour cream', 'milk', 'yogurt', 'ice cream', 'milkshake']
+
+function logDiary() {
+    for (const log of dairy) {
+        console.log(log)
+    }
+}
+
+logDiary()
+
+
+const animal = {canJump: true };
+const bird = Object.create(animal);
+bird.canFly = true;
+bird.hasFeathers = true;
+
+function birdCan() {
+       
+    }
