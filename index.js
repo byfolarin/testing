@@ -960,39 +960,139 @@ const car = {
 //     console.log(prop);
 // }
 
-for(const prop of  Object.entries(car) ) {
-    console.log(prop);
-}
+// for(const prop of  Object.entries(car) ) {
+//     console.log(prop);
+// }
 
 
-var clothingItem = {
-    price: 50,
-    color: 'beige',
-    material: 'cotton',
-    season: 'autumn'
-}
+// var clothingItem = {
+//     price: 50,
+//     color: 'beige',
+//     material: 'cotton',
+//     season: 'autumn'
+// }
 
-for( const key of Object.keys(clothingItem) ) {
-    console.log(key, ":", clothingItem[key])
-}
-
-
-var dairy = ['cheese', 'sour cream', 'milk', 'yogurt', 'ice cream', 'milkshake']
-
-function logDiary() {
-    for (const log of dairy) {
-        console.log(log)
-    }
-}
-
-logDiary()
+// for( const key of Object.keys(clothingItem) ) {
+//     console.log(key, ":", clothingItem[key])
+// }
 
 
-const animal = {canJump: true };
-const bird = Object.create(animal);
-bird.canFly = true;
-bird.hasFeathers = true;
+// var dairy = ['cheese', 'sour cream', 'milk', 'yogurt', 'ice cream', 'milkshake']
 
-function birdCan() {
-       
-    }
+// function logDiary() {
+//     for (const log of dairy) {
+//         console.log(log)
+//     }
+// }
+
+// logDiary()
+
+
+// const animal = { canJump: true };
+// const bird = Object.create(animal);
+// bird.canFly = true;
+// bird.hasFeathers = true;
+
+// function birdCan() {
+//     const birdProperties = Object.entries(bird);
+
+//     for (const [key, value] of birdProperties) { // Iterate over each key-value pair
+//         console.log(`${key} : ${value}`); // Print key-value pairs
+//     }
+// }
+
+// birdCan();
+
+
+
+// function animalCan() {
+//     const animalProperties = Object.entries(animal);
+
+//    for (const [key, value] in animalProperties) { // Iterate over each key-value pair
+//        console.log(`${key} : ${value}`); // Print key-value pairs
+//    }
+// }
+
+// function animalCan() {
+//     for (const key in bird) { // Iterate over all properties in the bird object and its prototype chain
+//         if (bird.hasOwnProperty(key)) { // Check if the property is an own property of bird (not inherited)
+//             console.log(`${key}: ${bird[key]}`); // Print key-value pairs
+//         }
+//     }
+// }
+
+// animalCan();
+
+// function animalCan() {
+//     const animalProperties = Object.entries(animal);
+
+//     for (const [key, value] of animalProperties) { // Iterate over each key-value pair
+//         console.log(`${key}: ${value}`); // Print key-value pairs
+//     }
+// }
+
+
+// animalCan();
+
+
+
+// Task 1
+
+// var dairy = ['cheese', 'sour cream', 'milk', 'yogurt', 'ice cream', 'milkshake']
+
+// function logDairy() {
+//     for (const log of dairy) {
+//         console.log(log)
+//     }
+// }
+// logDairy()
+
+// Task 2
+
+// const animal = {
+
+// canJump: true
+
+// };
+
+// const bird = Object.create(animal);
+
+// bird.canFly = true;
+
+// bird.hasFeathers = true;
+
+// function birdCan() {
+//     const birdProperties = Object.entries(bird);
+
+//     for (const [key, value] of birdProperties) { // Iterate over each key-value pair
+//         console.log(`${key}: ${value}`); // Print key-value pairs
+//     }
+// }
+
+// birdCan();
+
+// Task 3
+
+// function animalCan() {
+//     const animalProperties = Object.entries(animal);
+
+//     for (const [key, value] of animalProperties) { // Iterate over each key-value pair
+//         console.log(` ${key}: ${value}`); // Print key-value pairs
+//     }
+// }
+
+
+// animalCan();
+
+
+const veggies = ['onion', 'garlic', 'potato'];
+veggies.forEach( function(veggie, index) {
+    console.log(`${index}. ${veggie}`);
+});
+
+
+
+const repetitiveFruits = ['apple','pear','apple','pear','plum', 'apple'];
+const uniqueFruits = new Set(repetitiveFruits);
+console.log(uniqueFruits);
+
