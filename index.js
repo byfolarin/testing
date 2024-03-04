@@ -766,33 +766,33 @@ function manager(){
 // newTask.markingtask(); // Call markingtask method separately
 // console.log(newTask);
 
-class Task {
-    constructor(taskName, taskDescription, isCompleted) {
-        this.taskName = taskName;
-        this.taskDescription = taskDescription;
-        this.isCompleted = isCompleted;
-        this.markingtask(); // Call markingtask method in the constructor
-    }
+// class Task {
+//     constructor(taskName, taskDescription, isCompleted) {
+//         this.taskName = taskName;
+//         this.taskDescription = taskDescription;
+//         this.isCompleted = isCompleted;
+//         this.markingtask(); // Call markingtask method in the constructor
+//     }
 
-    taskadd() {
-        console.log("Task has been added");
-    }
+//     taskadd() {
+//         console.log("Task has been added");
+//     }
 
-    taskdelete() {
-        console.log("Task has been deleted");
-    }
+//     taskdelete() {
+//         console.log("Task has been deleted");
+//     }
 
-    markingtask() {
-        if (this.isCompleted === true) {
-            console.log("Task has been marked as completed");
-        } else {
-            console.log("Task is not completed");
-        }
-    }
-}
+//     markingtask() {
+//         if (this.isCompleted === true) {
+//             console.log("Task has been marked as completed");
+//         } else {
+//             console.log("Task is not completed");
+//         }
+//     }
+// }
 
-let newTask = new Task("Clean the bathroom floor", "Make it sparkling", true);
-console.log(newTask);
+// let newTask = new Task("Clean the bathroom floor", "Make it sparkling", true);
+// console.log(newTask);
 
 
 // Student Grade Calculator:
@@ -924,11 +924,11 @@ console.log(newTask);
 // console.log(b); // Output: 1
 
 
-const message = "Hello";
+// const message = "Hello";
 
-for (const char of message) {
-    console.log(char);
-}
+// for (const char of message) {
+//     console.log(char);
+// }
 
 // Output:
 // H
@@ -938,10 +938,10 @@ for (const char of message) {
 // o
 
 
-const car = {
-    speed: 100,
-    color: "blue"
-}
+// const car = {
+//     speed: 100,
+//     color: "blue"
+// }
 
 
 
@@ -1085,14 +1085,106 @@ const car = {
 // animalCan();
 
 
-const veggies = ['onion', 'garlic', 'potato'];
-veggies.forEach( function(veggie, index) {
-    console.log(`${index}. ${veggie}`);
-});
+// const veggies = ['onion', 'garlic', 'potato'];
+// veggies.forEach( function(veggie, index) {
+//     console.log(`${index}. ${veggie}`);
+// });
 
 
 
-const repetitiveFruits = ['apple','pear','apple','pear','plum', 'apple'];
-const uniqueFruits = new Set(repetitiveFruits);
-console.log(uniqueFruits);
+// const repetitiveFruits = ['apple','pear','apple','pear','plum', 'apple'];
+// const uniqueFruits = new Set(repetitiveFruits);
+// console.log(uniqueFruits);
 
+// const numbers = [1, 2, 3, 4, 5];
+
+// numbers.forEach(number => {
+//     console.log(number);
+// });
+
+
+// const sentence = 'Hello, world!';
+
+// for (const char of sentence) {
+//     console.log(char);
+// }
+
+
+// Function Practice:
+
+// Write a function that takes two parameters (a and b) and returns their sum.
+// Write a function that takes an array of numbers as input and returns the sum of all the numbers in the array.
+// Write a function that takes a string as input and returns the reverse of the string.
+
+
+// function calc (a,b){
+//     let sum = a * b;
+//     return sum
+// }
+
+
+
+// function input (arr){ 
+// let sum = 0
+// for (let i = 0; i < arr.length; i++){
+//     sum += arr[i]
+// }
+// return sum
+// }
+
+// console.log(input([1,2,4,6,7]));
+
+
+// function string(Str){
+//      let split = Str.split('').reverse().join('')
+//     return split;
+
+// }
+
+// console.log(string("hagrid"));
+
+
+// Object Practice:
+
+// Create an object representing a car with properties like make, model, and year.
+// Add a method to the car object that prints out the car's details.
+// Create another object representing a person with properties like name, age, and gender.
+
+
+class Car {
+    constructor (make,model,year){
+        this.make = `Toyota`,
+        this.model = `Convertible`,
+        this.year = 1998
+    }
+
+carDetails(){
+    console.log(`this is a ${this.make} ${this.model} created in ${this.year}`) 
+}
+
+}
+
+
+let object = new Car;
+
+console.log(object.carDetails())
+
+
+class Personn {
+    constructor(name,age,gender){
+        this.name = `Abiola`,
+        this.age = 10,
+        this.gender = `Male`
+    }
+}
+
+let newPersonn = new Personn
+
+console.log(newPersonn);
+
+
+// Array Practice:
+
+// Create an array of numbers and use the forEach method to print each number to the console.
+// Use the map method to double each number in an array and create a new array with the doubled values.
+// Use the filter method to create a new array containing only the even numbers from an array of numbers.
