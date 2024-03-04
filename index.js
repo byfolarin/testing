@@ -1305,3 +1305,22 @@ console.log(doubledNumbers); // Output: [2, 4, 6, 8, 10]
 })
 
 
+// Write a function that takes an array of full names (e.g., "John Doe") as input and returns a new array containing only the first names (e.g., "John"), using the map() method.
+
+
+function fullNames (fullname){
+   return fullname.map(i => i.split('')[0] )
+   
+}
+
+
+const names = ["John Doe", "Jane Smith", "Alice Johnson"];
+console.log(fullNames(names)); // Output: ["John", "Jane", "Alice"]
+
+
+function firstNames(fullNames) {
+    return fullNames.map(name => name.split(' ')[0]);
+}
+
+const name = ["John Doe", "Jane Smith", "Alice Johnson"];
+console.log(firstNames(name)); // Output: ["John", "Jane", "Alice"]
