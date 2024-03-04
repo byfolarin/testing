@@ -1188,3 +1188,120 @@ console.log(newPersonn);
 // Create an array of numbers and use the forEach method to print each number to the console.
 // Use the map method to double each number in an array and create a new array with the doubled values.
 // Use the filter method to create a new array containing only the even numbers from an array of numbers.
+
+
+let arrNum = [1,2,3,4,5,6,7,8,9]
+
+arrNum.forEach(function (num)
+{ console.log(num)}
+)
+
+// Sum of Array Elements:
+// Write a function that takes an array of numbers as input and calculates the sum of all elements using the forEach method.
+
+function getSum (arr){
+    let sum = 0
+    arr.forEach(function (num){
+        sum += num
+    })
+    return sum
+}
+
+let array = [1,2,3,5,6,7,8]
+
+console.log(getSum(array));
+
+
+// Logging Array Elements:
+// Write a function that takes an array of strings as input and logs each element to the console with a specific format (e.g., prepend each element with a number and a dash) using the forEach method.
+
+function arrString (arr){
+ arr.forEach(function (num, index)
+    {console.log(`${index} - ${num}`)}
+    )
+}
+
+
+let strings = ["String", "Object", "Update"];
+
+console.log (arrString(strings));
+
+
+// Finding Maximum Element:
+// Write a function that takes an array of numbers as input and finds the maximum element in the array using the forEach method.
+
+function arrr(arrNum) {
+    let max = arrNum[0]; // Initialize max with the first element of the array
+
+    arrNum.forEach(function(num) {
+        if (num > max) { // Compare each element with max to find the maximum value
+            max = num; // Update max if the current element is greater
+        }
+    });
+
+    return max; // Return the maximum value after iterating through the entire array
+}
+
+let arrrrr = [29, 38, 43, 9, 12];
+console.log(arrr(arrrrr)); // Output: 43
+
+
+// Filtering Array Elements:
+// Write a function that takes an array of numbers as input and creates a new array containing only the even numbers using the forEach method.
+
+function takeArray (take){
+    take.forEach(num =>{
+        let evenNumbers = [];
+        if (num % 2 === 0){
+            evenNumbers.push(num);
+        }
+
+        return evenNumbers
+    }
+
+    
+    )
+}
+
+let arN= [1,4,5,7,9,8,19,8];
+
+console.log(takeArray(arN));
+
+
+// Use the map method to double each number in an array and create a new array with the doubled values.
+
+
+const numbers = [1, 2, 3, 4, 5];
+
+// Map over the array and double each element
+const doubledNumbers = numbers.map(num => num * 2);
+
+console.log(doubledNumbers); // Output: [2, 4, 6, 8, 10]
+
+
+// Capitalize Strings:
+// Write a function that takes an array of strings as input and returns a new array where each string is capitalized (the first letter is uppercase and the rest are lowercase), using the map() method.
+
+
+// function arrStr (strInput){
+//         let newInput = strInput.toLowerCase()()
+//         let updatedInput = newInput[num].toUpperCase();
+
+//         strInput.map(num => num.indexof(updatedInput))
+//         {
+//             return num
+//         }
+
+        
+// }
+
+// const numberss = ["THIS", "IS", "MATRIx"];
+
+// console.log(arrStr(numberss));
+
+
+[0,10,20,30,40,50].map(num => {
+    return num / 10
+})
+
+
