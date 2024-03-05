@@ -1323,4 +1323,113 @@ function firstNames(fullNames) {
 }
 
 const name = ["John Doe", "Jane Smith", "Alice Johnson"];
-console.log(firstNames(name)); // Output: ["John", "Jane", "Alice"]
+console.log(firstNames(name)); // Output: ["John", "Jane", "Alice"]             
+
+
+
+
+
+
+
+// let strings = ["String", "Object", "Update"];
+
+// console.log (arrString(strings));
+
+
+// // Finding Maximum Element:
+// // Write a function that takes an array of numbers as input and finds the maximum element in the array using the forEach method.
+
+// function arrr(arrNum) {
+//     let max = arrNum[0]; // Initialize max with the first element of the array
+
+//     arrNum.forEach(function(num) {
+//         if (num > max) { // Compare each element with max to find the maximum value
+//             max = num; // Update max if the current element is greater
+//         }
+//     });
+
+//     return max; // Return the maximum value after iterating through the entire array
+// }
+
+// let arrrrr = [29, 38, 43, 9, 12];
+// console.log(arrr(arrrrr)); // Output: 43
+
+
+// // Filtering Array Elements:
+// // Write a function that takes an array of numbers as input and creates a new array containing only the even numbers using the forEach method.
+
+// function takeArray (take){
+//     take.forEach(num =>{
+//         let evenNumbers = [];
+//         if (num % 2 === 0){
+//             evenNumbers.push(num);
+//         }
+
+//         return evenNumbers
+//     }
+
+    
+//     )
+// }
+
+// let arN= [1,4,5,7,9,8,19,8];
+
+// console.log(takeArray(arN));
+
+
+// // Use the map method to double each number in an array and create a new array with the doubled values.
+
+
+// const numbers = [1, 2, 3, 4, 5];
+
+// // Map over the array and double each element
+// const doubledNumbers = numbers.map(num => num * 2);
+
+// console.log(doubledNumbers); // Output: [2, 4, 6, 8, 10]
+
+
+// // Capitalize Strings:
+// // Write a function that takes an array of strings as input and returns a new array where each string is capitalized (the first letter is uppercase and the rest are lowercase), using the map() method.
+
+
+// // function arrStr (strInput){
+// //         let newInput = strInput.toLowerCase()()
+// //         let updatedInput = newInput[num].toUpperCase();
+
+// //         strInput.map(num => num.indexof(updatedInput))
+// //         {
+// //             return num
+// //         }
+
+        
+// // }
+
+// // const numberss = ["THIS", "IS", "MATRIx"];
+
+// // console.log(arrStr(numberss));
+
+
+// [0,10,20,30,40,50].map(num => {
+//     return num / 10
+// })
+
+
+// // Write a function that takes an array of full names (e.g., "John Doe") as input and returns a new array containing only the first names (e.g., "John"), using the map() method.
+
+
+// function fullNames (fullname){
+//    return fullname.map(i => i.split('')[0] )
+   
+// }
+
+
+// const names = ["John Doe", "Jane Smith", "Alice Johnson"];
+// console.log(fullNames(names)); // Output: ["John", "Jane", "Alice"]
+
+
+// function firstNames(fullNames) {
+//     return fullNames.map(name => name.split(' ')[0]);
+// }
+
+// const name = ["John Doe", "Jane Smith", "Alice Johnson"];
+// console.log(firstNames(name)); // Output: ["John", "Jane", "Alice"]                 
