@@ -1365,3 +1365,62 @@ function count(...food) {
 
 count("Burgers", "Fries", null);
 
+
+
+// Class Creation and Instance Methods:
+// Define a class called Rectangle that represents a rectangle with properties width and height. Implement a method called calculateArea that calculates and returns the area of the rectangle. Create an instance of the Rectangle class with width 5 and height 10, then print its area using a template literal
+
+class Rectangle{
+    constructor (width,height){
+            this.width = width
+            this.height =  height
+    }
+
+    calculateArea(){
+        let sum = this.width * this.height
+        return sum
+    }
+}
+
+
+let sub = new Rectangle(5,10)
+
+console.log(`area of the rectangle: ${sub.calculateArea()}`);
+
+
+// 2. Iterating Through Data Structures:
+// Given an array of numbers [1, 2, 3, 4, 5], use a for...of loop to iterate through the array and print each number multiplied by 2 using template literals.
+
+
+let arr = [1, 2, 3, 4, 5];
+
+for (let num of arr){
+    let multiplied = num * 2
+    console.log(`${num} multiplied by 2 is ${multiplied}`)
+}
+
+// Spread Operator and Function Parameters:
+// Write a function called maxValue that takes any number of arguments using the rest parameter syntax and returns the maximum value among the arguments. Call this function with the numbers 10, 20, 30, and 40 using the spread operator.
+
+
+function maxValue(...numbers) {
+    return Math.max(...numbers);
+}
+
+const max = maxValue(10, 20, 30, 40);
+
+
+console.log("Maximum value:", max); // Output: Maximum value: 40
+
+
+// Data Structure Manipulation and Spread Operator:
+// Given an array of numbers [1, 2, 3], create a new array called modifiedArray using the spread operator. Add the numbers 4 and 5 to modifiedArray, then remove the last element. Print the final contents of modifiedArray using a template literal.
+
+
+let arar = [1,2,3];
+
+let modifiedArray = [...arar, 4,5];
+
+modifiedArray.pop();
+
+console.log(`this is the final elements of modified array ${modifiedArray}`);
