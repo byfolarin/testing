@@ -1424,3 +1424,38 @@ let modifiedArray = [...arar, 4,5];
 modifiedArray.pop();
 
 console.log(`this is the final elements of modified array ${modifiedArray}`);
+
+
+// Object Manipulation and Functions:
+// You have an array of objects representing employees, each with properties name and salary. Write a function called calculateTotalSalary that takes this array as an argument and returns the total salary of all employees. Additionally, create a function called highestPaidEmployee that takes the same array as an argument and returns the name of the employee with the highest salary.Object Manipulation and Functions:
+
+function calculateTotalSalary(employees) {
+    let totalSalary = 0;
+    for (let employee of employees) {
+        totalSalary += employee.salary;
+    }
+    return totalSalary;
+}
+
+
+function highestPaidEmployee(employees) {
+    let highestSalary = 0;
+    let highestPaidEmployeeName = '';
+    for (let employee of employees) {
+        if (employee.salary > highestSalary) {
+            highestSalary = employee.salary;
+            highestPaidEmployeeName = employee.name;
+        }
+    }
+    return highestPaidEmployeeName;
+}
+
+
+const employees = [
+    { name: 'Alice', salary: 50000 },
+    { name: 'Bob', salary: 60000 },
+    { name: 'Charlie', salary: 45000 }
+];
+
+console.log("Total salary of all employees:", calculateTotalSalary(employees));
+console.log("Name of the highest paid employee:", highestPaidEmployee(employees));
